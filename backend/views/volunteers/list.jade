@@ -1,8 +1,8 @@
 extends ../../views/layout
 
 block content
-    h1= title
-    p Welcome to our test
+    h1 Volunteers
+    p Lol
 
     // Wrapper
     #wrapper
@@ -11,6 +11,9 @@ block content
         #volunteerInfo
             h2 Volunteer Info
             p
+                strong Email:
+                |  <span id='volunteerInfoEmail'></span>
+                br
                 strong First Name:
                 |  <span id='volunteerInfoFirstName'></span>
                 br
@@ -19,6 +22,18 @@ block content
                 br
                 strong Age:
                 |  <span id='volunteerInfoAge'></span>
+                br
+                strong City:
+                |  <span id='volunteerInfoCity'></span>
+                br
+                strong State:
+                |  <span id='volunteerInfoState'></span>
+                br
+                strong Zip:
+                |  <span id='volunteerInfoZip'></span>
+                br
+                strong event Type:
+                |  <span id='volunteerInfoEventType'></span>
                 br
         // /VOLUNTEER INFO
 
@@ -34,10 +49,33 @@ block content
                     th Age
                     th City
                     th State
+                    th zip
                     th Event Types
                     th Delete?
                 tbody
         // /USER LIST
+
+        // ADD USER
+        h2 Add VOLUNTEER
+        #addVolunteer
+            fieldset
+                input#inputVolunteerEmail(type="text", placeholder="email", name="email")
+                br
+                input#inputVolunteerFirstName(type="text", placeholder="first name", name="first_name")
+                input#inputVolunteerLastName(type="text", placeholder="last name", name="last_name")
+                br
+                input#inputVolunteerMobilePhone(type="text", placeholder="mobile phone", name="mobile_phone")
+                br
+                input#inputVolunteerAge(type="text", placeholder="age", name="age")
+                br
+                input#inputVolunteerCity(type="text", placeholder="city", name="city")
+                input#inputVolunteerState(type="text", placeholder="state", name="state")
+                input#inputVolunteerZip(type="text", placeholder="zip", name="zip")
+                br
+                input#inputVolunteerEventType(type="text", placeholder="event type", name="event_type")
+                br
+                button#btnAddVolunteer Add Volunteer
+        // /ADD VOLUNTEER
 
     // /WRAPPER
 
