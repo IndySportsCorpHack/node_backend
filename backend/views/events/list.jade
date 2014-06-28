@@ -1,8 +1,8 @@
 extends ../../views/layout
 
 block content
-    h1= title
-    p Welcome to my test
+    h1 Events
+    p Event list
 
     // Wrapper
     #wrapper
@@ -14,14 +14,17 @@ block content
                 strong Event Name:
                 |  <span id='eventInfoEventName'></span>
                 br
-                strong Event Location:
-                |  <span id='eventInfoLocation'></span>
+                strong Event City:
+                |  <span id='eventInfoCity'></span>
+                br
+                strong Event State:
+                |  <span id='eventInfoState'></span>
                 br
                 strong Date:
                 |  <span id='eventInfoDate'></span>
                 br
                 strong Event Type:
-                |  <span id='eventInfoType'
+                |  <span id='eventInfoType'></span>
                 br
         // /EVENT INFO
 
@@ -41,5 +44,26 @@ block content
                     th Delete?
                 tbody
         // /EVENT LIST
+
+        // ADD EVENT
+        h2 Add EVENT
+        #addEvent
+            fieldset
+                input#inputEventName(type="text", placeholder="name", name="name")
+                br
+                input#inputEventCity(type="text", placeholder="city", name="city")
+                input#inputEventState(type="text", placeholder="state", name="state")
+                br
+                input#inputEventStartTime(type="text", placeholder="start time", name="start_time")
+                input#inputEventEndTime(type="text", placeholder="end time", name="end_time")
+                br
+                input#inputEventDate(type="text", placeholder="date", name="date")
+                br
+                input#inputEventEventType(type="text", placeholder="event type", name="event_type")
+                br
+                input#inputEventVolunteersNeeded(type="text", placeholder="volunteers needed", name="volunteers_needed")
+                br
+                button#btnAddEvent Add Event
+        // /ADD EVENT
 
     // /WRAPPER

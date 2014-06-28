@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var volunteers = require('./routes/volunteers')
+var events = require('./routes/events')
 
 var mongo = require('mongoskin');
 var db = mongo.db("mongodb://localhost:27017/sportscorpdb", {native_parser:true});
@@ -34,6 +35,7 @@ app.use(function(req,res,next){
 app.use('/', routes);
 app.use('/users', users);
 app.use('/volunteers', volunteers)
+app.use('/events', events)
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
