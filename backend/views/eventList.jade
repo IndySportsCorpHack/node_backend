@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Event List
+    ul
+        each event, i in eventlist
+            li
+                a(href="Some Link Here")= event.event_name

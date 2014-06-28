@@ -1,0 +1,45 @@
+extends ../../views/layout
+
+block content
+    h1= title
+    p Welcome to my test
+
+    // Wrapper
+    #wrapper
+
+        // EVENT INFO
+        #eventInfo
+            h2 Event Info
+            p
+                strong Event Name:
+                |  <span id='eventInfoEventName'></span>
+                br
+                strong Event Location:
+                |  <span id='eventInfoLocation'></span>
+                br
+                strong Date:
+                |  <span id='eventInfoDate'></span>
+                br
+                strong Event Type:
+                |  <span id='eventInfoType'
+                br
+        // /EVENT INFO
+
+        // EVENT LIST
+        h2 Event List
+        #eventList
+            table
+                thead
+                    th Name
+                    th City Location
+                    th State Location
+                    th Start Time
+                    th End Time
+                    th Date
+                    th Event Type
+                    th Volunteers Needed
+                    th Delete?
+                tbody
+        // /EVENT LIST
+
+    // /WRAPPER
