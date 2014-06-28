@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        User List
+    ul
+        each volunteer, i in volunteerlist
+            li
+                a(href="mailto:#{volunteer.email}")= volunteer.first_name

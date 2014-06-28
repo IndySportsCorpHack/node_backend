@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddVolunteer(name="adduser",method="post",action="/addvolunteer")
+        input#inputVolunteerEmail(type="text", placeholder="email", name="email")
+        input#inputVolunteerFirstName(type="text", placeholder="first name", name="first_name")
+        input#inputVolunteerLastName(type="text", placeholder="last name", name="last_name")
+        input#inputVolunteerMobilePhone(type="text", placeholder="mobile phone", name="mobile_phone")
+        input#inputVolunteerAge(type="text", placeholder="age", name="age")
+        input#inputVolunteerCity(type="text", placeholder="city", name="city")
+        input#inputVolunteerState(type="text", placeholder="state", name="state")
+        input#inputVolunteerEventType(type="text", placeholder="event type", name="event_type")
+        button#btnSubmit(type="submit") submit

@@ -1,0 +1,43 @@
+extends ../../views/layout
+
+block content
+    h1= title
+    p Welcome to our test
+
+    // Wrapper
+    #wrapper
+
+        // VOLUNTEER INFO
+        #volunteerInfo
+            h2 Volunteer Info
+            p
+                strong First Name:
+                |  <span id='volunteerInfoFirstName'></span>
+                br
+                strong Last Name:
+                |  <span id='volunteerInfoLastName'></span>
+                br
+                strong Age:
+                |  <span id='volunteerInfoAge'></span>
+                br
+        // /VOLUNTEER INFO
+
+        // VOLUNTEER LIST
+        h2 Voluteer List
+        #volunteerList
+            table
+                thead
+                    th Email
+                    th First Name
+                    th Last Name
+                    th Mobile Phone
+                    th Age
+                    th City
+                    th State
+                    th Event Types
+                    th Delete?
+                tbody
+        // /USER LIST
+
+    // /WRAPPER
+
