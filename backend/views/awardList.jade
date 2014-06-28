@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Award List
+    ul
+        each award, i in awardlist
+            li
+                a(href="Some Link Here")= award.award_name

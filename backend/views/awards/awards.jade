@@ -1,0 +1,41 @@
+extends ../../views/layout
+
+block content
+    h1= title
+    p Welcome to my awards test
+
+    // Wrapper
+    #wrapper
+
+        // AWARD INFO
+        #awardInfo
+            h2 Award Info
+            p
+                strong Award ID:
+                |  <span id='awardInfoAwardID'></span>
+                br
+                strong Award Name:
+                |  <span id='awardInfoAwardName'></span>
+                br
+                strong Award Value:
+                |  <span id='awardInfoAwardValue'></span>
+                br
+                strong Award Description:
+                |  <span id='awardInfoAwardDescription'
+                br
+        // /AWARD INFO
+
+        // AWARD LIST
+        h2 Award List
+        #awardList
+            table
+                thead
+                    th Award ID
+                    th Award Name
+                    th Award Value
+                    th Award Description
+                    th Delete?
+                tbody
+        // /AWARD LIST
+
+    // /WRAPPER
